@@ -1,0 +1,42 @@
+@page-max-width: 85.71428571rem; // should be 1000px
+
+@blue-primary: #00b8e4;
+@white-primary: #ffffff;
+
+
+
+/* ####################### */
+/* responsive layout setup */
+
+
+@xs-min:     280px;
+@sm-min:     640px;
+@sm-min-top: 800px;
+@md-min:     992px;
+@md-min-top: 1100px;
+@lg-min:     1200px;
+
+@xs-max:     (@sm-min - 1);
+@sm-max-top: (@sm-min-top - 1);
+@sm-max:     (@md-min - 1);
+@md-max-top: (@md-min-top - 1);
+@md-max:     (@lg-min - 1);
+
+@phone:                ~"only screen and (min-width: @{xs-min})";
+@phone-strict:         ~"only screen and (min-width: @{xs-min}) and (max-width: @{xs-max})";
+
+@tablet:               ~"only screen and (max-width: @{sm-max})";
+@tablet-strict-bottom: ~"only screen and (min-width: @{sm-min}) and (max-width: @{sm-max-top})";
+@tablet-bottom:       ~"only screen and (max-width: @{sm-max-top})";
+@tablet-strict-top:    ~"only screen and (min-width: @{sm-min-top}) and (max-width: @{sm-max})";
+@tablet-strict:        ~"only screen and (min-width: @{sm-min}) and (max-width: @{sm-max})";
+
+@desktop:              ~"only screen and (min-width: @{md-min})";
+@desktop-bottom:       ~"only screen and (max-width: @{md-max-top})";
+
+@desktop-strict-top:   ~"only screen and (min-width: @{md-min-top}) and (max-width: @{md-max})";
+@desktop-strict:       ~"only screen and (min-width: @{md-min}) and (max-width: @{md-max})";
+
+@large:                ~"only screen and (min-width: @{lg-min})";
+
+
