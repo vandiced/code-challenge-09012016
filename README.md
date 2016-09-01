@@ -1,3 +1,7 @@
+Put the entire directory in server running PHP to get hte proxy script running
+
+If need be:
+
 1. npm init
 2. npm install -g grunt-cli
 3. create a Gruntfile.js (sample:
@@ -35,4 +39,6 @@ module.exports = function(grunt) {
 )
 
 4. npm install grunt grunt-contrib-less grunt-contrib-watch jit-grunt --save-dev
+5. grunt
+6. that should be it
 
